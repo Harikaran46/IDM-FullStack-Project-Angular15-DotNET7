@@ -1,0 +1,4 @@
+2023-10-02 00:16:58.487 +05:30 [INF] Now listening on: http://localhost:4000
+2023-10-02 00:16:58.956 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-02 00:16:58.958 +05:30 [INF] Hosting environment: Production
+2023-10-02 00:16:58.960 +05:30 [INF] Content root path: D:\training\MVC\IdmAspireApi\

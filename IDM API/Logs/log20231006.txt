@@ -1,0 +1,22 @@
+2023-10-06 16:25:49.236 +05:30 [INF] Now listening on: http://localhost:4000
+2023-10-06 16:25:49.666 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-06 16:25:49.668 +05:30 [INF] Hosting environment: Production
+2023-10-06 16:25:49.668 +05:30 [INF] Content root path: D:\training\MVC\IdmAspireApi\
+2023-10-06 21:19:42.091 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:4000/users/authenticate - -
+2023-10-06 21:19:42.472 +05:30 [INF] CORS policy execution successful.
+2023-10-06 21:19:42.636 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:4000/users/authenticate - - - 204 - - 598.6446ms
+2023-10-06 21:19:42.788 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:4000/users/authenticate application/json 37
+2023-10-06 21:19:42.814 +05:30 [INF] CORS policy execution successful.
+2023-10-06 21:19:53.673 +05:30 [INF] Executing endpoint 'WebApi.Controllers.UsersController.Authenticate (WebApi)'
+2023-10-06 21:19:54.317 +05:30 [INF] Route matched with {action = "Authenticate", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Authenticate(WebApi.Models.Users.AuthenticateRequest) on controller WebApi.Controllers.UsersController (WebApi).
+2023-10-06 21:20:21.227 +05:30 [INF] Executed action WebApi.Controllers.UsersController.Authenticate (WebApi) in 26882.5353ms
+2023-10-06 21:20:21.271 +05:30 [INF] Executed endpoint 'WebApi.Controllers.UsersController.Authenticate (WebApi)'
+2023-10-06 21:20:21.488 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:4000/users/authenticate application/json 37 - 500 - application/json 38700.2477ms
+2023-10-06 21:23:12.200 +05:30 [INF] Now listening on: http://localhost:4000
+2023-10-06 21:23:12.382 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-06 21:23:12.389 +05:30 [INF] Hosting environment: Production
+2023-10-06 21:23:12.390 +05:30 [INF] Content root path: D:\training\MVC\IdmAspireApi\
+2023-10-06 21:29:08.739 +05:30 [INF] Now listening on: http://localhost:4000
+2023-10-06 21:29:08.924 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-06 21:29:08.925 +05:30 [INF] Hosting environment: Production
+2023-10-06 21:29:08.925 +05:30 [INF] Content root path: D:\training\MVC\IdmAspireApi\
