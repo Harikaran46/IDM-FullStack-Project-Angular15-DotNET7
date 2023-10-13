@@ -1,0 +1,102 @@
+<!-- <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+  <ul *ngIf="userFromApi">
+      <li>{{userFromApi.firstName}} {{userFromApi.lastName}}</li>
+         <li>{{userFromApi.email}}</li>
+         <li>{{userFromApi.gender}}</li>
+         <li>{{userFromApi.username}}</li>
+         <li>{{userFromApi.password}}</li>
+         <li>{{userFromApi.dateOfBirth}}</li>
+         <li>{{userFromApi.address}}</li>
+         <li>{{userFromApi.adhaarNumber}}</li>
+         <li>{{userFromApi.mobileNumber}}</li>
+
+  </ul> -->
+  
+  <div class="bg">
+  <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+  <div class="student-profile py-4">
+    <div class="container" *ngIf="userFromApi">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card shadow-sm">
+            <div class="card-header bg-transparent text-center">
+              <img class="profile_img" src="/assets/profilelogo.png" alt="student dp">
+              <h3>{{userFromApi.role}}</h3>
+            </div>
+            <div class="card-body">
+              <p class="mb-0"><strong class="pr-1">USER NAME:</strong>{{userFromApi.username}}</p>
+              <p class="mb-0"><strong class="pr-1">EMAIL:</strong>{{userFromApi.email}}</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="card shadow-sm">
+            <div class="card-header bg-transparent border-0">
+              <h3 class="mb-0"><i class="	fa fa-address-card"></i>General Information</h3>
+            </div>
+            <div class="card-body pt-0">
+              <table class="table table-bordered">
+                <tr>
+                  <th width="30%">EMPLOYEE ID</th>
+                  <td width="2%">:</td>
+                  <td>2307{{userFromApi.id}}</td>
+                </tr>
+                <tr>
+                  <th width="30%">FIRST NAME</th>
+                  <td width="2%">:</td>
+                  <td>{{userFromApi.firstName}}</td>
+                </tr>
+                <tr>
+                  <th width="30%">LAST NAME</th>
+                  <td width="2%">:</td>
+                  <td>{{userFromApi.lastName}}</td>
+                </tr>
+                <tr>
+                  <th width="30%"> GENDER</th>
+                  <td width="2%">:</td>
+                  <td>{{userFromApi.gender}}</td>
+                </tr>
+                <tr>
+                  <th width="30%">D.O.B</th>
+                  <td width="2%">:</td>
+                  <td>{{userFromApi.dateOfBirth}}</td>
+                </tr>
+                <tr>
+                  <th width="30%">DEPARTMENT</th>
+                  <td width="2%">:</td>
+                  <td>{{userFromApi.department}}</td>
+                </tr>
+                <tr>
+                  <th width="30%">SALARY</th>
+                  <td width="2%">:</td>
+                  <td>{{userFromApi.salary}}</td>
+                </tr>
+                <tr>
+                  <th width="30%">MOBILE NUMBER</th>
+                  <td width="2%">:</td>
+                  <td>{{userFromApi.mobileNumber}}</td>
+                </tr>
+                <tr>
+                  <th width="30%">ADHAAR NUMBER</th>
+                  <td width="2%">:</td>
+                  <td>{{userFromApi.adhaarNumber}}</td>
+                </tr>
+                <tr>
+                  <th width="30%">ADDRESS</th>
+                  <td width="2%">:</td>
+                  <td>{{userFromApi.address}}</td>
+                </tr>
+              </table>
+              <div class="but">
+                <a [routerLink]="['/edit', userFromApi.id]">
+                  <button class="edit-button"><i  class= "fa fa-edit"> Edit</i></button>
+                </a>
+                <a *ngIf="user.id !== userFromApi.id">
+                  <button class="delete-button" type="button" (click)="delete(userFromApi.id)"><i class="fa fa-trash"> Delete</i></button>
+                </a>
+              </div>
+
+              </div>
+          </div>
+          </div>

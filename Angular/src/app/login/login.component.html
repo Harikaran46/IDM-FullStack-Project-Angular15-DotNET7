@@ -1,0 +1,22 @@
+﻿
+
+<div class="background-img" >
+<div class="login-box">
+  <h2><i class="fa fa-sign-in"></i>LOGIN</h2>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="user-box">
+      <input  type="text" formControlName="username"  [ngClass]="{ 'is-invalid': submitted && f.username.errors }"   required />
+      <label>Username</label>
+      <div *ngIf="submitted && f.username.errors" class="error-message" style="color: red;" >Username is required</div>
+    </div>
+    <div class="user-box">
+      <input  type="password" formControlName="password"  [ngClass]="{ 'is-invalid': submitted && f.password.errors }"  required />
+      <label>Password</label>
+      <div *ngIf="submitted && f.password.errors" class="error-message" style="color: red;">Password is required</div>
+    </div>
+    <button class="button"><span >Enter</span></button>
+    <div *ngIf="error" class="alert alert-danger mt-3 mb-0">{{error}}</div>
+  </form>
+</div>
+</div>
+

@@ -1,0 +1,35 @@
+﻿<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+<h1> All Employees</h1>
+<div class="tbl-content">
+<table class="table">
+    <thead>
+        <tr><th>ID</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th>MobileNumber</th>
+            <th>Gender</th>
+            <th>View</th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+            <tr *ngFor="let user of users">
+                <td>2307{{user.id}}</td>
+                <td>{{user.firstName}}</td>
+                <td>{{user.lastName}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.department}}</td>
+                <td>{{user.mobileNumber}}</td>
+                <td>{{user.gender}}</td>
+                <td><a  [routerLink]="['/profile', user.id]"><button ><i  class= "fa fa-address-card"> </i> </button></a></td>
+              </tr>
+    </tbody>
+</table>
+</div>
+
+

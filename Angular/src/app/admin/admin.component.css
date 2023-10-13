@@ -1,0 +1,46 @@
+
+    /* Table Styling */
+    h1 {
+      color: #500547;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+  }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #32082c;
+    }
+
+    th {
+        background-color: #e2ade2;
+        color: #333;
+    }
+
+    /* Row Styling */
+    tr:nth-child(even) {
+        background-color: #f7e0ee;
+    }
+
+    /* Button Styling */
+    button {
+        background-color: #e773ed;
+        color: purple;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    /* Link Styling */
+    a {
+        text-decoration: none;
+    }
+

@@ -1,0 +1,63 @@
+﻿<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<!-- nav -->
+<header class="header" >
+    <a class="logo" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+     IDM <img src="./assets/AspireSystemslogo.png" alt="MySports Logo" style="height: 60px;"></a>
+    <nav class="nav-items" >
+        <a  [routerLink]="['/profile', user.id]" routerLinkActive="active" *ngIf="user" ><i class="fa fa-user-circle-o"></i> {{user.firstName}} </a>
+        <a  routerLink="/admin" routerLinkActive="active" *ngIf="isAdmin"><i class="fa fa-group"></i> All Employee</a>
+        <a  routerLink="/create" routerLinkActive="active" *ngIf="isAdmin"><i class="fa fa-user-plus"></i> Add</a>
+        <a  routerLink="/login" routerLinkActive="active" *ngIf="!user"><i class="fa fa-sign-in"></i> Login</a>
+        <a  routerLink="/profile" routerLinkActive="active" *ngIf="user"><i class="fa fa-bell"></i></a>
+        <a *ngIf="user"  class="btn " (click)="logout()"><i class="fa fa-sign-out"></i> Logout</a>
+      </nav>
+</header>
+
+
+
+<!-- main app container -->
+
+    <router-outlet></router-outlet>
+
+
+
+  <!-- <footer class="footer" >
+    <div class="top">
+    <p>CONTACTS:</p>
+    <p><i class="fa fa-envelope"></i> Email : aspireidm@gmail.com</p>
+    <p><i class="fa fa-phone"></i> phone : 00456-765433</p>
+    </div>
+
+  <p>Copyright &copy; 2019 > All Rights Reserved.</p>
+  </footer> -->
+  <footer>
+    <div class="container">
+      <div class="row">
+          <h3>INFO</h3>
+          <p>Aspire Systems</p><br>
+          <h3>CONTACT US</h3>
+          <p>1/D-1, SIPCOT IT PARK Siruseri,
+          Chennai - 603 103<br>
+          Tamil Nadu, India</p>
+          <p><i class="fa fa-phone"></i>Phone: +91 44 6740 4000</p>
+          <p><i class="fa fa-envelope"></i>Email: <a href="mailto:info-india@aspiresys.com">info-india@aspiresys.com</a></p>
+          <h3>Get Social</h3>
+          <ul class="social-media">
+            <li><a href="https://www.facebook.com/aspiresys" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/aspiresys" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/aspire-systems" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>&copy; Copyrights 2020 Aspire Systems.</p>
+        </div>
+      </div>
+  </footer>
+
+
+
